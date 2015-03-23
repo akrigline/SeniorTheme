@@ -8,35 +8,47 @@
 
 <?php 
 	$slug = $post->post_name;
-	$title = the_title();
 
-	$linkedIn = the_field('linkedin');
-	$website = the_field('website');
+	$linkedIn = get_field('linkedin');
+	$website = get_field('website');
 ?>
 
 <section class="slide" data-anchor="<?php echo '#' . $slug; ?>">
 
   <div class="bottom-button">
     <a href="<?php echo '#' . $slug . '_collapse' ?>" data-toggle="collapse">
-	    <h2><?php echo $title; ?></h2>
+	    <h2><?php the_title(); ?></h2>
 	    <p>ABOUT THE ARTIST</p>
     </a>
   </div>
 
-  <div class="bottom-panel collapse" id="<?php echo '#' . $slug . '_collapse' ?>">
-
+  <div class="bottom-panel collapse" id="<?php echo $slug . '_collapse' ?>">
+<!--
 		<?php for ($i = 0; $i <= 2; ++$i) : ?>
 		  <?php 
 		  	$imageSample = 'work_' . $i+1; 
-		  	$image = get_field($imageSample);
+		  	$sample = get_field($imageSample);
 			?>
 
 	    <div class="work col-xs-12 col-sm-4 col-md-3">
-	       <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+	       <img src="<?php echo $sample['url']; ?>" alt="<?php echo $sample['alt']; ?>">
 	    </div>
 
 		<?php endfor; ?>
+-->
+	<?php $sample1 = get_field('work_1');
+				$sample2 = get_field('work_2');
+				$sample3 = get_field('work_3'); ?>
 
+	    <div class="work col-xs-12 col-sm-4 col-md-3">
+	       <img src="<?php echo $sample1['url']; ?>" alt="<?php echo $sample1['alt']; ?>">
+	    </div>
+	    <div class="work col-xs-12 col-sm-4 col-md-3">
+	       <img src="<?php echo $sample2['url']; ?>" alt="<?php echo $sample2['alt']; ?>">
+	    </div>
+	    <div class="work col-xs-12 col-sm-4 col-md-3">
+	       <img src="<?php echo $sample3['url']; ?>" alt="<?php echo $sample3['alt']; ?>">
+	    </div>
 
     <div class="about col-xs-12 col-sm-12 col-md-3">
 	    <button class="btn btn-close" data-toggle="collapse" data-target="<?php echo '#' . $slug . '_collapse' ?>">
@@ -46,7 +58,7 @@
 	      </svg>
 	    </button>
       
-      <h1><?php echo $title; ?><br><a target="blank" href="<?php echo $linkedIn; ?>"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin.svg"></a><a target="blank" href="<?php echo $website; ?>"><img src="<?php bloginfo('template_directory'); ?>/img/website.svg"></a></h1>
+      <h1><?php the_title(); ?><br><a target="blank" href="<?php echo $linkedIn; ?>"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin.svg"></a><a target="blank" href="<?php echo $website; ?>"><img src="<?php bloginfo('template_directory'); ?>/img/website.svg"></a></h1>
       
       <?php the_content(); ?>
 
@@ -71,8 +83,8 @@
     ?>
 
 	    <video height="100%" loop class="hidden-xs">
-	      <source src="<?php echo $webm; ?>" type="video/webm"/>
-	      <source src="<?php echo $mp4; ?>" type="video/mp4"/>
+	      <source src="<?php echo $webm['url'];; ?>" type="video/webm"/>
+	      <source src="<?php echo $mp4['url']; ?>" type="video/mp4"/>
 	    </video>
 
 	    <img src="<?php echo $imageMain['url']; ?>" alt="<?php echo $imageMain['alt']; ?>" class="visible-xs">
@@ -87,18 +99,39 @@
   <div class="first col-xs-12 col-sm-4 col-md-6">
 
     <div class="slide-side right">
-
-			<?php for ($i = 0; $i <= 3; ++$i) : ?>
+<!--
+			<?php for ($n = 0; $n <= 3; ++$n) : ?>
 			  <?php 
-			  	$imageSmall = 'small_' . $i+1; 
-			  	$image = get_field($imageSmall);
+			  	$imageSmall = 'small_' . $n+1; 
+			  	$small = get_field($imageSmall);
 				?>
 
 	      <div class="img-headshot col-xs-6">
-	        <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>">
+	        <img src="<?php echo $small['url']; ?>" alt="<?php echo $small['alt']; ?>">
 	      </div>
 
 			<?php endfor; ?>
+-->
+
+			<?php 
+			  	$small1 = get_field('small_1');
+			  	$small2 = get_field('small_2');
+			  	$small3 = get_field('small_3');
+			  	$small4 = get_field('small_4');
+				?>
+			<div class="img-headshot col-xs-6">
+        <img src="<?php echo $small1['url']; ?>" alt="<?php echo $small1['alt']; ?>">
+      </div>
+
+      <div class="img-headshot col-xs-6">
+        <img src="<?php echo $small2['url']; ?>" alt="<?php echo $small2['alt']; ?>">
+      </div>
+      <div class="img-headshot col-xs-6">
+        <img src="<?php echo $small3['url']; ?>" alt="<?php echo $small3['alt']; ?>">
+      </div>
+      <div class="img-headshot col-xs-6">
+        <img src="<?php echo $small4['url']; ?>" alt="<?php echo $small4['alt']; ?>">
+      </div>
 
     </div><!-- right -->
 

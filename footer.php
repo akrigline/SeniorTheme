@@ -9,12 +9,12 @@
 ?>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-  <script src="js/vendor/jquery.fullPage.js"></script>
-  <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
-  <script src="js/vendor/bootstrap.js"></script>
+  <script>window.jQuery || document.write('<script src="<?php bloginfo('template_directory');?>/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <script src="<?php bloginfo('template_directory');?>/js/vendor/jquery.fullPage.js"></script>
+  <script src="<?php bloginfo('template_directory');?>/js/vendor/imagesloaded.pkgd.min.js"></script>
+  <script src="<?php bloginfo('template_directory');?>/js/vendor/bootstrap.js"></script>
 
-  <script src="js/main.js"></script>
+  <script src="<?php bloginfo('template_directory');?>/js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>

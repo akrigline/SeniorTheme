@@ -1,7 +1,7 @@
 <div class="section" data-anchor="home" id="welcome">
 
   <div class="logo">
-    <img class="col-xs-10 col-sm-6 col-md-6" src="img/finefolk_logo.svg" alt="FINE FOLK LOGO">
+    <img class="col-xs-10 col-sm-6 col-md-6" src="<?php bloginfo('template_directory'); ?>/img/finefolk_logo.svg" alt="FINE FOLK LOGO">
   </div>
 	
 	<?php if ( have_posts() ) : ?>
@@ -10,14 +10,17 @@
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php
-					$link = get_field('link_to');
+          $slug = $post->post_name;
 					$image = get_field('main_image');
-					$img_url = $image['sizes']['thumbnail'];
+					$img_url = $image['sizes']['medium'];
 					$img_alt = $image['alt'];
+
+          $category = get_the_category(); 
+
 				?>
 			
         <li>
-          <a href="<?php echo $link; ?>">
+          <a href="<?php echo '#' . $category[0]->cat_name . '/#' . $slug; ?>">
             <figure>
               <img src="<?php echo $img_url; ?>" alt="<?php echo $img_alt; ?>">
               <figcaption>

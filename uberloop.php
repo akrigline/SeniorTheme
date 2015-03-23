@@ -12,7 +12,7 @@ $currentValue = 0;
 
 		<?php if ( have_posts() ) : ?>
 
-			<div class="section" data-anchor="<?php echo '#' . $anchors[$currentValue]; ?>">
+			<div class="section" data-anchor="<?php echo $anchors[$currentValue]; ?>">
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -25,8 +25,6 @@ $currentValue = 0;
 		<?php else : ?>
 
 		<?php endif; ?>
-
-	</div>
 
 	<?php wp_reset_query(); ?>
 	<?php $currentValue++; ?>
