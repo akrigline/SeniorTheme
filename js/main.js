@@ -2,9 +2,7 @@ $(document).ready(function() {
     $('#fullPage').fullpage({
     	//Navigation
         menu: '#myMenu',
-        anchors:['home', 'ab', 'ch', 'im', 'mp', 'pv', 'vy'],
         navigation: false,
-        navigationPosition: 'right',
         slidesNavigation: true,
 
         //Scrolling
