@@ -41,7 +41,9 @@ $(document).ready(function() {
         afterLoad: function(){
             //playing the video
             if ( $('.section.active .slide.active video').css('display') === 'none' ) {
-
+                //do nothing
+            } else if ( $('.section.active').is('#welcome') ) {
+                //still do nothing
             } else {
                 $('.section.active .slide.active video').addClass('playing');
                 $('.playing').get(0).play();
@@ -57,7 +59,9 @@ $(document).ready(function() {
         afterSlideLoad: function(){
             //playing the video
             if ( $('.section.active .slide.active video').css('display') === 'none' ) {
-
+                //do nothing
+            } else if ( $('.section.active').is('#welcome') ) {
+                //still do nothing
             } else {
                 $('.section.active .slide.active video').addClass('playing');
                 $('.playing').get(0).play();
