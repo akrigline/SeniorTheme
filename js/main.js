@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#fullPage').fullpage({
-    	//Navigation
+        //Navigation
         menu: '#myMenu',
         navigation: false,
         slidesNavigation: true,
@@ -9,7 +9,6 @@ $(document).ready(function() {
         css3: true,
         scrollingSpeed: 700,
         autoScrolling: true,
-        fitToSection: false,
         scrollBar: false,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
@@ -32,36 +31,34 @@ $(document).ready(function() {
         fixedElements: '#header',
         responsive: 0,
 
-        //Custom selectors
-        sectionSelector: '.section',
-        slideSelector: '.slide',
-
-        onSlideLeave: function(anchorLink, index){
-            var getValue = index-2;
+        onSlideLeave: function(){
             //Pausing the video
-            $('.slide.active video').get(getValue).pause();
-        },
-        onLeave: function(index, nextIndex){
-            var getValue = index-2;
-            //Pausing the video
-            $('.slide.active video').get(getValue).pause();
-        },
-        afterLoad: function(slideAnchor, index){
-            var getValue = index-2;
-            //playing the video
-            if ( $('.slide.active video').css('display') === 'none' ) {
-
-            } else {
-                $('.slide.active video').get(getValue).play();
+            if ( $('.playing').length ) {
+                $('video.playing').get(0).pause();
+                $('video.playing').removeClass('playing');
             }
         },
-        afterSlideLoad: function(anchorLink, index){
-            var getValue = index-2;
+        afterLoad: function(){
             //playing the video
             if ( $('.slide.active video').css('display') === 'none' ) {
 
             } else {
-                $('.slide.active video').get(getValue).play();
+                $('.section.active .slide.active video').get(0).play().addClass('playing');
+            }
+        },
+        onLeave: function(){
+            //Pausing the video
+            if ( $('.playing').length ) {
+                $('video.playing').get(0).pause();
+                $('video.playing').removeClass('playing');
+            }
+        },
+        afterSlideLoad: function(){
+            //playing the video
+            if ( $('.slide.active video').css('display') === 'none' ) {
+
+            } else {
+                $('.section.active .slide.active video').get(0).play().addClass('playing');
             }
         },
 
@@ -101,10 +98,3 @@ $(window).resize(headImgs);
 $('#fullPage').imagesLoaded( function() {
     $('#fullPage').removeClass('loading');
 });
-
-
-
-
-
-
-
