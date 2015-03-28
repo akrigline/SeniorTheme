@@ -1,8 +1,17 @@
 <div class="section" data-anchor="home" id="welcome">
 
   <div class="logo">
-    <img class="col-xs-10 col-sm-6 col-md-6" src="<?php bloginfo('template_directory'); ?>/img/finefolk_logo.svg" alt="FINE FOLK LOGO">
+    <img class="col-xs-10 col-sm-6" src="<?php bloginfo('template_directory'); ?>/img/finefolk_logo.svg" alt="FINE FOLK LOGO">
+    <div class="col-xs-10 col-sm-6 col-sm-offset-3 hidden-xs show-info">
+      <h1>FRIDAY 04.24.15</h1>
+      <h2>Professionals: 4:30PM–6:00PM</h2>
+      <h2>Family and Friends: 6:00PM–8:00PM</h2>
+      <h4>EMILY DAVIS GALLERY, FOLK HALL<br>
+      150 E. EXCHANGE ST.<br>
+      AKRON, OH 44325-7801</h4>
+    </div>
   </div>
+  <?php query_posts('orderby=rand'); ?>
 	
 	<?php if ( have_posts() ) : ?>
 		
@@ -37,5 +46,5 @@
 	<?php else : ?>
 
 	<?php endif; ?>
-
+  <?php wp_reset_query(); ?>
 </div>

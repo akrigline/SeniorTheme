@@ -34,11 +34,11 @@
 			?>
       <?php if ($sampleNumber <= 3 ) : ?>
   	    <div class="work col-xs-12 col-sm-4 col-md-6">
-  	       <img src="<?php echo $sample['url']; ?>" alt="<?php echo $sample['alt']; ?>">
+  	       <img class="invisible" data-original="<?php echo $sample['url']; ?>" alt="<?php echo $sample['alt']; ?>">
   	    </div>
       <?php else : ?>
         <div class="work col-xs-12 col-sm-4 col-md-12">
-           <img src="<?php echo $sample['url']; ?>" alt="<?php echo $sample['alt']; ?>">
+           <img class="invisible" data-original="<?php echo $sample['url']; ?>" alt="<?php echo $sample['alt']; ?>">
         </div>
       <?php endif; ?>
 
@@ -70,7 +70,7 @@
 
   <div class="img-headshot slide-side hidden-xs hidden-sm col-md-6">
 
-    <img src="<?php echo $imageMain['url']; ?>" alt="<?php echo $imageMain['alt']; ?>">
+    <img class="invisible" data-original="<?php echo $imageMain['url']; ?>" alt="<?php echo $imageMain['alt']; ?>">
 
   </div><!-- left -->
 
@@ -87,7 +87,7 @@
 	      <source src="<?php echo $mp4['url']; ?>" type="video/mp4"/>
 	    </video>
 
-	    <img src="<?php echo $imageMain['url']; ?>" alt="<?php the_title(); ?>" class="visible-xs">
+	    <img class="invisible" data-original="<?php echo $imageMain['url']; ?>" alt="<?php the_title(); ?>" class="visible-xs">
     </div><!-- rounded -->
   </div><!-- Player -->
 
@@ -108,7 +108,7 @@
 				?>
 
 	      <div class="img-headshot col-xs-6">
-	        <img src="<?php echo $small['url']; ?>" alt="<?php the_title(); ?>">
+	        <img class="invisible" data-original="<?php echo $small['url']; ?>" alt="<?php the_title(); ?>">
 	      </div>
 
 			<?php endfor; ?>

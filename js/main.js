@@ -38,7 +38,14 @@ $(document).ready(function() {
                 $('video.playing').removeClass('playing');
             }
         },
-        afterLoad: function(){
+        afterLoad: function(anchorLink, index){
+
+            var activeSection = $('.section').eq(index -1);
+            activeSection.find('img').each(function() {
+                var imagePath = $(this).attr("data-original");
+                $(this).attr('src',imagePath);
+                $(this).removeClass('invisible');
+            });
             //playing the video
             if ( $('.section.active .slide.active video').css('display') === 'none' ) {
                 //do nothing
@@ -67,6 +74,13 @@ $(document).ready(function() {
                 $('.playing').get(0).play();
             }
         },
+        afterRender: function(){
+            var activeSection = $('.section').eq(0);;
+            activeSection.find('img').each(function() {
+                var imagePath = $(this).attr("data-original");
+                $(this).attr('src',imagePath);
+            });
+        }
 
     });
 });
