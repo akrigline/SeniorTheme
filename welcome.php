@@ -11,12 +11,12 @@
       AKRON, OH 44325-7801</h4>
     </div>
   </div>
-  <?php query_posts('orderby=rand'); ?>
-	
-	<?php if ( have_posts() ) : ?>
 		
 		<ul class="list-unstyled">
 
+  <?php query_posts('orderby=rand'); ?>
+  
+  <?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php
           $slug = $post->post_name;
@@ -40,11 +40,43 @@
         </li>
 
 			<?php endwhile; // end of the loop. ?>
+  <?php else : ?>
 
+  <?php endif; ?>
+  <?php wp_reset_query(); ?>
+
+  <?php query_posts('posts_per_page=12&orderby=rand'); ?>
+  
+  <?php if ( have_posts() ) : ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <?php
+          $slug = $post->post_name;
+          $image = get_field('small_1');
+          $img_url = $image['sizes']['medium'];
+          $img_alt = $image['alt'];
+
+          $category = get_the_category(); 
+
+        ?>
+      
+        <li>
+          <a href="<?php echo '#' . $category[0]->cat_name . '/#' . $slug; ?>">
+            <figure>
+              <img src="<?php echo $img_url; ?>" alt="<?php echo $img_alt; ?>">
+              <figcaption>
+                <h5><?php the_title(); ?></h5>
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+
+      <?php endwhile; // end of the loop. ?>
+  <?php else : ?>
+
+  <?php endif; ?>
+  <?php wp_reset_query(); ?>
+
+  
 		</ul>
 
-	<?php else : ?>
-
-	<?php endif; ?>
-  <?php wp_reset_query(); ?>
 </div>
