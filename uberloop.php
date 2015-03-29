@@ -2,11 +2,11 @@
 
 
 <?php 
-$anchors = array( "ab", "ch", "im", "mp", "pv", "vy" );
+$anchors = array( "ab", "ci", "jm", "np", "rv", "vy" );
 $currentValue = 0;
 ?>
 
-<?php while ( $currentValue <= count($anchors) ) : ?>
+<?php while ( $currentValue < count($anchors) ) : ?>
 
 	<?php query_posts( array( 'category_name' => $anchors[$currentValue] ) ); ?>
 

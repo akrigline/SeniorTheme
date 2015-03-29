@@ -67,11 +67,11 @@
 	    <div class="container collapse navbar-collapse" id="navbar-collapse">
 	      <ul class="list-unstyled" id="myMenu">
 	        <li data-menuanchor="ab"><a href="#ab">A&ndash;B</a></li>
-	        <li data-menuanchor="ch"><a href="#ch">C&ndash;H</a></li>
-	        <li data-menuanchor="im"><a href="#im">I&ndash;M</a></li>
+	        <li data-menuanchor="ci"><a href="#ci">C&ndash;I</a></li>
+	        <li data-menuanchor="jm"><a href="#jm">J&ndash;M</a></li>
 	        <li class="home hidden-xs" data-menuanchor="home"><a href="#home">FINE FOLK</a></li>
-	        <li data-menuanchor="mp"><a href="#mp">M&ndash;P</a></li>
-	        <li data-menuanchor="pv"><a href="#pv">P&ndash;V</a></li>
+	        <li data-menuanchor="np"><a href="#np">N&ndash;P</a></li>
+	        <li data-menuanchor="rv"><a href="#rv">R&ndash;V</a></li>
 	        <li data-menuanchor="vy"><a href="#vy">V&ndash;Y</a></li>
 	      </ul>
 	    </div>
