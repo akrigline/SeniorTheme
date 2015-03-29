@@ -33,7 +33,7 @@
         $sampleNumber++;
 			?>
       <?php if ($sampleNumber <= 3 ) : ?>
-  	    <div class="work col-xs-12 col-sm-4 col-md-6">
+  	    <div class="work col-xs-12 col-sm-4 col-md-6 hidden-xs">
   	       <img class="invisible" data-original="<?php echo $sample['url']; ?>" alt="<?php echo $sample['alt']; ?>">
   	    </div>
       <?php else : ?>

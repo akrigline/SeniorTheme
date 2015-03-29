@@ -1,1 +1,35 @@
-<svg width='120px' height='120px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-default"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#FFF' transform='rotate(0 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#FFF' transform='rotate(36 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.1s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#FFF' transform='rotate(72 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.2s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#FFF' transform='rotate(108 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.3s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#FFF' transform='rotate(144 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.4s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#FFF' transform='rotate(180 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.5s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#FFF' transform='rotate(216 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.6s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#FFF' transform='rotate(252 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.7s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#FFF' transform='rotate(288 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.8s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#FFF' transform='rotate(324 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.9s' repeatCount='indefinite'/></rect></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1604px" height="1720px" viewBox="147.469 -465.933 1604 1720" enable-background="new 147.469 -465.933 1604 1720"
+	 xml:space="preserve">
+<g>
+	<g>
+		<path fill="#FFFFFF" d="M949.032,1015.16c-329.713,0-597.422-268.129-597.422-597.427c0-329.292,268.129-597.421,597.422-597.421
+			c329.294,0,597.424,268.13,597.424,597.421C1546.875,747.03,1278.746,1015.16,949.032,1015.16z M949.032-164.604
+			c-320.915,0-581.921,261.002-581.921,581.922c0,320.916,261.006,581.922,581.921,581.922
+			c320.916,0,581.922-261.006,581.922-581.922C1531.376,96.817,1269.948-164.604,949.032-164.604z"/>
+	</g>
+	<path fill="#FFFFFF" d="M866.497-92.546v487.657h113.539v44.828H866.497v170.93h-49.854V440.358H438.751l-18.014-38.965
+		L819.577-92.55L866.497-92.546L866.497-92.546z M816.645-17.554L483.579,395.53h333.065V-17.554L816.645-17.554z"/>
+	<path fill="#FFFFFF" d="M909.234,224.18V176h430.68v36.449l-233.355,266.452c130.709,7.543,244.244,69.126,244.244,195.648
+		c0,121.076-105.153,201.513-224.558,201.513c-112.277,0-196.486-51.108-253.044-124.008l39.379-32.259
+		c55.303,69.964,124.007,110.183,214.503,110.183c92.588,0,170.091-62.006,170.091-153.335c0-97.617-90.492-150.403-214.503-150.403
+		h-37.285l-12.568-28.485l237.127-273.577L909.234,224.18L909.234,224.18z"/>
+	<g>
+		<path fill="#FFFFFF" d="M1561.54,785.572c-125.267,207.383-352.755,346.47-612.508,346.47
+			c-259.752,0-487.24-139.087-612.507-346.47h-54.461c130.295,234.613,380.408,393.396,666.968,393.396
+			c286.562,0,536.674-158.783,666.969-393.396H1561.54z		">
+<animateTransform  type="rotate" fill="remove" restart="always" additive="replace" accumulate="none" attributeName="transform" dur="2s" attributeType="xml" from="0 946 421" repeatCount="indefinite" calcMode="linear" to="360 946 421">
+				</animateTransform>
+		</path>
+		<path fill="#FFFFFF" d="M359.153,13.865c129.033-187.691,345.214-311.279,589.879-311.279
+			c244.668,0,460.847,123.589,589.885,311.282h56.136c-134.9-214.925-374.122-358.203-646.021-358.203
+			c-271.897,0-511.118,143.7-646.019,358.203h56.139V13.865z		">
+<animateTransform  type="rotate" fill="remove" restart="always" additive="replace" accumulate="none" attributeName="transform" dur="2s" attributeType="xml" from="0 946 421" repeatCount="indefinite" calcMode="linear" to="360 946 421">
+				</animateTransform>
+		</path>
+	</g>
+</g>
+</svg>
