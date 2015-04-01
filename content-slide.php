@@ -83,7 +83,7 @@
     ?>
 
 	    <video height="100%" loop class="hidden-xs">
-	      <source src="<?php echo $webm['url'];; ?>" type="video/webm"/>
+	      <source src="<?php echo $webm['url']; ?>" type="video/webm"/>
 	      <source src="<?php echo $mp4['url']; ?>" type="video/mp4"/>
 	    </video>
 
